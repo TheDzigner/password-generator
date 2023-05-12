@@ -1,0 +1,352 @@
+*, ::before, ::after{
+
+ margin : 0;
+
+ padding: 0;
+
+ box-sizing: border-box ;
+
+ font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+
+ height: 100vh;
+
+ font-size :15pt;
+
+  width: min(100%, 480px);
+
+  background-color :#0D153A;
+
+}
+
+.history{
+
+ position :fixed ;
+
+ width: 80%;
+
+ height: 35rem;
+
+ z-index :30 ;
+
+ top: 50%;
+
+ left: 50%;
+
+ transform: translate(-50%,-50%);
+
+ display: flex;
+
+ justify-content :flex-start ;
+
+ align-items :center ;
+
+ flex-direction :column ;
+
+ padding :10px ;
+
+ background-color :#0D153A;
+
+ border-radius :1em;
+
+ box-shadow :0 0 7px rgba(183,185,190,.1);
+
+}
+
+.history .child{
+
+ width: 100%;
+
+ height: 3em;
+
+ margin: 5px auto 0 ;
+
+ border-radius :.2em ;
+
+ background-color: rgba(183,185,190,.2);
+
+}
+
+.history .child span{
+
+ padding :10px ;
+
+ font-size :.5em ;
+
+ margin: 0 5px 0;
+
+}
+
+.history h5 {
+
+ position :absolute ;
+
+ top: 50%;
+
+ left: 50%;
+
+ transform :translate(-50%,-50%);
+
+ text-align :center ;
+
+ color: rgba(183,185,190,.5);
+
+}
+
+header{
+
+ position :fixed ;
+
+ top: 0;
+
+ left :0 ;
+
+ width :100%;
+
+ padding :10px ;
+
+ display :flex;
+
+ justify-content :space-between ;
+
+ align-items :center ;
+
+}
+
+header h1 {
+
+ font-size :1.2em ;
+
+ text-align :left ;
+
+ color :rgba(183,185,190,.2);
+
+}
+
+header button {
+
+ background-color :transparent ;
+
+ color :rgba(183,185,190,.2);
+
+ border :none ;
+
+ padding :10px ;
+
+ outline :none ;
+
+ display :inline-block ;
+
+ z-index :2;
+
+}
+
+#app{
+
+ margin: 20% auto 0 ;
+
+ width :100%;
+
+}
+
+.head{
+
+ width :100%;
+
+ display: flex ;
+
+ justify-content :center ;
+
+ align-items :center ;
+
+ padding :15px ;
+
+}
+
+.head h4{
+
+ padding:.5rem;
+
+ letter-spacing:.2em;
+
+ color:#FFFFFF ;
+
+ font-family: 'Montserrat', sans-serif;
+
+}
+
+.head button 
+
+{
+
+ outline :none ;
+
+ margin-left :auto ;
+
+ padding:.5rem ;
+
+ background-color: transparent ;
+
+ border :none ;
+
+ color: rgba(183,185,190,.2);
+
+}
+
+.body{
+
+ width :100%;
+
+ height :auto ;
+
+ display: flex ;
+
+ justify-content :center ;
+
+ flex-direction :column ;
+
+ align-items :center ;
+
+ padding :15px ;
+
+ margin:10% auto 0 ;
+
+}
+
+.body label{
+
+ width :100%;
+
+ height: 4rem;
+
+ text-align :left ;
+
+ margin:.7em auto 0 ;
+
+ display: flex ;
+
+ justify-content :space-between ;
+
+ align-items :center ;
+
+ padding :5px ;
+
+ border-radius :.4em;
+
+ background-color: rgba(183,185,190,.2);
+
+}
+
+.body label h6{
+
+ color: rgba(183,185,190,.3);
+
+ text-transform :capitalize ;
+
+}
+
+.body label input[type='checkbox']{
+
+ -webkit-appearance: none ;
+
+ appearance: none ;
+
+ display :inline-block ;
+
+ outline :none ;
+
+ width: 1em;
+
+ height: 1em;
+
+ transition :.2s ease-in-out ;
+
+ border :.1em groove rgba(183,185,190,.3);
+
+}
+
+.body label input[type='checkbox']:checked{
+
+ 
+
+ background-color: rgba(183,185,190,.4);
+
+ transition :.2s ease-in-out ;
+
+}
+
+.body label input[type="range"]{
+
+ 
+
+  background: linear-gradient(to right, #82CFD0 0%, #82CFD0 40%, #fff 40%, #fff 100%);
+
+  border: solid 2px #82CFD0;
+
+  border-radius: 8px;
+
+  height:.3em;
+
+  width: 15em;
+
+  outline: none;
+
+  transition: background 450ms ease-in;
+
+  -webkit-appearance: none;
+
+ }
+
+ 
+
+ .body label input[type="range"]::-webkit-slider-thumb {
+
+  width: 20px;
+
+  height: 20px;
+
+  border-radius: 50%;
+
+  -webkit-appearance: none;
+
+  cursor: ew-resize;
+
+  background: #FFFFFF;
+
+ }
+
+.body button{
+
+ display :block ;
+
+ width :100%;
+
+ padding :1.3em 2em;
+
+ margin :1em auto 0 ;
+
+ border-radius :.5em ;
+
+ outline :none ;
+
+ transform :scale(1);
+
+ transform :.2s ease-in-out ;
+
+ border :.3em solid #F1F1F1 ;
+
+ font-weight :700 ;
+
+}
+
+.body button:active {
+
+ transform :scale(.9);
+
+ transform :.2s ease-in-out ;
+
+}
+
