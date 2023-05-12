@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+
+ <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  
+
+ 
+
+  
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+  <title>
+
+   Password Generator 
+
+   🔒
+
+   </title>
+
+  
+
+  <!-- HTML -->
+
+  
+
+  
+
+  
+
+  <!-- Custom Styles -->
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- Project -->
+
+  
+
+  <header>
+
+   <h1>Password Generator 🔒 </h1>
+
+  </header>
+
+  
+
+  
+
+  <div id="app">
+
+   
+
+   
+
+   <div class="head">
+
+    <h4>
+
+   {{ password }} 
+
+  </h4>
+
+  
+
+  <button class="material-symbols-outlined" @click="CopyPassword" :disabled='password.length === 0'>content_copy</button>
+
+    
+
+   </div>
+
+   
+
+  
+
+   <div class="body">
+
+    
+
+<label for="PasswordLength">
+
+ <h6>
+
+  Password Length : {{ passwordLength }}
+
+ </h6>
+
+ <input type="range"  value="5" id="PasswordLength" @input="settingPasswordLength" max="15" min="5"/>
+
+ 
+
+</label> 
+
+  <label for="includeSymboles">
+
+   <h6>
+
+    Include Symbols  ($ @ &) :
+
+   </h6>
+
+  <input type="checkbox" name="" id="includeSymboles" v-model="includeSymbols"/>
+
+  </label>
+
+  <label for="includeLetters">
+
+   <h6>
+
+    Include Letters :
+
+   </h6>
+
+  <input type="checkbox" name="" id="includeLetters" v-model="includeLetters"/>
+
+  </label>
+
+<label for="includeNumbers">
+
+ <h6>
+
+  Include Numbers :
+
+ </h6>
+
+  <input type="checkbox" name="" id="includeNumbers" v-model="includeNumbers"/>
+
+</label>
+
+<button @click="generatingPasswords">
+
+  Generate
+
+</button>
+
+   </div>
+
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
